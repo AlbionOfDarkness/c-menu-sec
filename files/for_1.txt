@@ -1,0 +1,9 @@
+NoSpace
+Yes Space1
+Yes Space2
+Yes Space3
+Yes FOR Space4 But more symb
+Yes FOR Space5
+Yes FOR Space6
+NoSpace
+NoSpace
