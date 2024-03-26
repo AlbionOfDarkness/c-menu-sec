@@ -4,8 +4,8 @@
 CPP      = g++.exe
 CC       = gcc.exe
 WINDRES  = windres.exe
-OBJ      = main.o func/func_gen.o func/menu/func_menu_file.o func/menu/func_menu_main.o func/menu/menu_1db.o func/menu/menu_2db.o func/menu/menu_structs_main.o func/files/func_prog1.o func/files/func_prog2.o func/files/func_prog3.o func/files/func_prog4.o func/structs/func_to_work_with_1db.o func/structs/func_to_work_with_2db.o
-LINKOBJ  = main.o func/func_gen.o func/menu/func_menu_file.o func/menu/func_menu_main.o func/menu/menu_1db.o func/menu/menu_2db.o func/menu/menu_structs_main.o func/files/func_prog1.o func/files/func_prog2.o func/files/func_prog3.o func/files/func_prog4.o func/structs/func_to_work_with_1db.o func/structs/func_to_work_with_2db.o
+OBJ      = main.o func/func_gen.o ../../C/_struct_menu/func/files/func_prog1.o ../../C/_struct_menu/func/files/func_prog2.o ../../C/_struct_menu/func/files/func_prog3.o ../../C/_struct_menu/func/files/func_prog4.o ../../C/_struct_menu/func/menu/func_menu_file.o ../../C/_struct_menu/func/menu/func_menu_main.o ../../C/_struct_menu/func/menu/menu_1db.o ../../C/_struct_menu/func/menu/menu_2db.o ../../C/_struct_menu/func/menu/menu_structs_main.o
+LINKOBJ  = main.o func/func_gen.o ../../C/_struct_menu/func/files/func_prog1.o ../../C/_struct_menu/func/files/func_prog2.o ../../C/_struct_menu/func/files/func_prog3.o ../../C/_struct_menu/func/files/func_prog4.o ../../C/_struct_menu/func/menu/func_menu_file.o ../../C/_struct_menu/func/menu/func_menu_main.o ../../C/_struct_menu/func/menu/menu_1db.o ../../C/_struct_menu/func/menu/menu_2db.o ../../C/_struct_menu/func/menu/menu_structs_main.o
 LIBS     = -L"D:/Programer/C/DEV-C++/TDM-GCC-64/lib" -L"D:/Programer/C/DEV-C++/TDM-GCC-64/x86_64-w64-mingw32/lib"
 INCS     = -I"D:/Programer/C/DEV-C++/TDM-GCC-64/include" -I"D:/Programer/C/DEV-C++/TDM-GCC-64/x86_64-w64-mingw32/include" -I"D:/Programer/C/DEV-C++/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include"
 CXXINCS  = -I"D:/Programer/C/DEV-C++/TDM-GCC-64/include" -I"D:/Programer/C/DEV-C++/TDM-GCC-64/x86_64-w64-mingw32/include" -I"D:/Programer/C/DEV-C++/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include" -I"D:/Programer/C/DEV-C++/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include/c++"
@@ -30,35 +30,29 @@ main.o: main.c
 func/func_gen.o: func/func_gen.c
 	$(CC) -c func/func_gen.c -o func/func_gen.o $(CFLAGS)
 
-func/menu/func_menu_file.o: func/menu/func_menu_file.c
-	$(CC) -c func/menu/func_menu_file.c -o func/menu/func_menu_file.o $(CFLAGS)
+../../C/_struct_menu/func/files/func_prog1.o: ../../C/_struct_menu/func/files/func_prog1.c
+	$(CC) -c ../../C/_struct_menu/func/files/func_prog1.c -o ../../C/_struct_menu/func/files/func_prog1.o $(CFLAGS)
 
-func/menu/func_menu_main.o: func/menu/func_menu_main.c
-	$(CC) -c func/menu/func_menu_main.c -o func/menu/func_menu_main.o $(CFLAGS)
+../../C/_struct_menu/func/files/func_prog2.o: ../../C/_struct_menu/func/files/func_prog2.c
+	$(CC) -c ../../C/_struct_menu/func/files/func_prog2.c -o ../../C/_struct_menu/func/files/func_prog2.o $(CFLAGS)
 
-func/menu/menu_1db.o: func/menu/menu_1db.c
-	$(CC) -c func/menu/menu_1db.c -o func/menu/menu_1db.o $(CFLAGS)
+../../C/_struct_menu/func/files/func_prog3.o: ../../C/_struct_menu/func/files/func_prog3.c
+	$(CC) -c ../../C/_struct_menu/func/files/func_prog3.c -o ../../C/_struct_menu/func/files/func_prog3.o $(CFLAGS)
 
-func/menu/menu_2db.o: func/menu/menu_2db.c
-	$(CC) -c func/menu/menu_2db.c -o func/menu/menu_2db.o $(CFLAGS)
+../../C/_struct_menu/func/files/func_prog4.o: ../../C/_struct_menu/func/files/func_prog4.c
+	$(CC) -c ../../C/_struct_menu/func/files/func_prog4.c -o ../../C/_struct_menu/func/files/func_prog4.o $(CFLAGS)
 
-func/menu/menu_structs_main.o: func/menu/menu_structs_main.c
-	$(CC) -c func/menu/menu_structs_main.c -o func/menu/menu_structs_main.o $(CFLAGS)
+../../C/_struct_menu/func/menu/func_menu_file.o: ../../C/_struct_menu/func/menu/func_menu_file.c
+	$(CC) -c ../../C/_struct_menu/func/menu/func_menu_file.c -o ../../C/_struct_menu/func/menu/func_menu_file.o $(CFLAGS)
 
-func/files/func_prog1.o: func/files/func_prog1.c
-	$(CC) -c func/files/func_prog1.c -o func/files/func_prog1.o $(CFLAGS)
+../../C/_struct_menu/func/menu/func_menu_main.o: ../../C/_struct_menu/func/menu/func_menu_main.c
+	$(CC) -c ../../C/_struct_menu/func/menu/func_menu_main.c -o ../../C/_struct_menu/func/menu/func_menu_main.o $(CFLAGS)
 
-func/files/func_prog2.o: func/files/func_prog2.c
-	$(CC) -c func/files/func_prog2.c -o func/files/func_prog2.o $(CFLAGS)
+../../C/_struct_menu/func/menu/menu_1db.o: ../../C/_struct_menu/func/menu/menu_1db.c
+	$(CC) -c ../../C/_struct_menu/func/menu/menu_1db.c -o ../../C/_struct_menu/func/menu/menu_1db.o $(CFLAGS)
 
-func/files/func_prog3.o: func/files/func_prog3.c
-	$(CC) -c func/files/func_prog3.c -o func/files/func_prog3.o $(CFLAGS)
+../../C/_struct_menu/func/menu/menu_2db.o: ../../C/_struct_menu/func/menu/menu_2db.c
+	$(CC) -c ../../C/_struct_menu/func/menu/menu_2db.c -o ../../C/_struct_menu/func/menu/menu_2db.o $(CFLAGS)
 
-func/files/func_prog4.o: func/files/func_prog4.c
-	$(CC) -c func/files/func_prog4.c -o func/files/func_prog4.o $(CFLAGS)
-
-func/structs/func_to_work_with_1db.o: func/structs/func_to_work_with_1db.c
-	$(CC) -c func/structs/func_to_work_with_1db.c -o func/structs/func_to_work_with_1db.o $(CFLAGS)
-
-func/structs/func_to_work_with_2db.o: func/structs/func_to_work_with_2db.c
-	$(CC) -c func/structs/func_to_work_with_2db.c -o func/structs/func_to_work_with_2db.o $(CFLAGS)
+../../C/_struct_menu/func/menu/menu_structs_main.o: ../../C/_struct_menu/func/menu/menu_structs_main.c
+	$(CC) -c ../../C/_struct_menu/func/menu/menu_structs_main.c -o ../../C/_struct_menu/func/menu/menu_structs_main.o $(CFLAGS)

@@ -29,7 +29,7 @@ IncludeVersionInfo=0
 SupportXPThemes=0
 CompilerSet=0
 CompilerSettings=0;0;0;0;0;0;0;0;2;0;0;0;0;0;0;0;0;0;0;0;0;0;4;0;0;0
-UnitCount=14
+UnitCount=12
 
 [VersionInfo]
 Major=1
@@ -51,16 +51,6 @@ AutoIncBuildNr=0
 SyncProduct=1
 
 [Unit2]
-FileName=func\func_menu_file.c
-CompileCpp=0
-Folder=func/files
-Compile=1
-Link=1
-Priority=1000
-OverrideBuildCmd=0
-BuildCmd=
-
-[Unit3]
 FileName=func\func_gen.c
 CompileCpp=0
 Folder=func
@@ -70,17 +60,7 @@ Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
 
-[Unit5]
-FileName=func\func_prog4.c
-CompileCpp=0
-Folder=func/files
-Compile=1
-Link=1
-Priority=1000
-OverrideBuildCmd=0
-BuildCmd=
-
-[Unit8]
+[Unit3]
 FileName=header.h
 CompileCpp=0
 Folder=
@@ -90,8 +70,28 @@ Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
 
+[Unit5]
+FileName=..\..\C\_struct_menu\func\files\func_prog2.c
+CompileCpp=0
+Folder=func/files
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit8]
+FileName=..\..\C\_struct_menu\func\menu\func_menu_file.c
+CompileCpp=0
+Folder=func/menu
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
 [Unit7]
-FileName=func\func_prog2.c
+FileName=..\..\C\_struct_menu\func\files\func_prog4.c
 CompileCpp=0
 Folder=func/files
 Compile=1
@@ -101,7 +101,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit6]
-FileName=func\func_prog3.c
+FileName=..\..\C\_struct_menu\func\files\func_prog3.c
 CompileCpp=0
 Folder=func/files
 Compile=1
@@ -121,7 +121,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit9]
-FileName=func\func_menu_main.c
+FileName=..\..\C\_struct_menu\func\menu\func_menu_main.c
 CompileCpp=0
 Folder=func/menu
 Compile=1
@@ -131,7 +131,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit4]
-FileName=func\func_prog1.c
+FileName=..\..\C\_struct_menu\func\files\func_prog1.c
 CompileCpp=0
 Folder=func/files
 Compile=1
@@ -141,9 +141,9 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit10]
-FileName=func\menu_structs_main.c
+FileName=..\..\C\_struct_menu\func\menu\menu_1db.c
 CompileCpp=0
-Folder=func/structs/menu_structs
+Folder=func/menu
 Compile=1
 Link=1
 Priority=1000
@@ -151,9 +151,9 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit11]
-FileName=func\structs\menu_1db.c
+FileName=..\..\C\_struct_menu\func\menu\menu_2db.c
 CompileCpp=0
-Folder=func/structs/menu_structs
+Folder=func/menu
 Compile=1
 Link=1
 Priority=1000
@@ -161,9 +161,9 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit12]
-FileName=func\structs\menu_2db.c
+FileName=..\..\C\_struct_menu\func\menu\menu_structs_main.c
 CompileCpp=0
-Folder=func/structs/menu_structs
+Folder=func/menu
 Compile=1
 Link=1
 Priority=1000
