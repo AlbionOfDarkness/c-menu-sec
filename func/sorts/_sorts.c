@@ -158,9 +158,8 @@ int* count_sort(int *arr, int n)
 		}
 	}
 	print_array(ans, new_counter, "Srt arr:");
+	free(counting_arr);
 	return ans;
-//	free(ans);
-//	free(counting_arr);
 }
 
 int *shell_sort(int *arr, int n)
@@ -186,7 +185,7 @@ int partition(int *arr, int left, int right)
 //  int pivot = find_mediana(arr, right - left);
 	int pivot = arr[right];
 //	printf("\npivot[%d]", pivot);
-  	int i = (left - 1);
+  	int i = left - 1;
 
   	for (int j = left; j < right; j++) 
 	  {
@@ -198,7 +197,7 @@ int partition(int *arr, int left, int right)
   }
   swap(&arr[i + 1], &arr[right]);
 
-  return (i + 1);
+  return i + 1;
 }
 
 void quick_sort(int *arr, int left, int right) 
