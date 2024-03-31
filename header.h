@@ -16,7 +16,13 @@ void prog_16_2(void);
 
 int file_err(FILE *file);
 int ptr_err(void *ptr);
+int ptr_err_adv(void *ptr, char *str);
 int check_for_space(char *str);
+void log_p(char *str);
+void print_array(int *arr, int n, char *str);
+int find_max_arr(int *arr, int n);
+void swap(int *a, int *b);
+int find_mediana(int *arr, int n);
 
 char* reverse_words_str(char* str);
 
@@ -115,6 +121,69 @@ void input_month_2bd(int id);
 void input_day_2bd(int id);
 void fast_input_2bd(int id);
 void take_data_to_fild_history_from_file(int id, char *str);
+
+void menu_sorts(void);
+void srt_menu_0(void);
+void srt_menu_1(void);
+void srt_menu_2(void);
+void srt_menu_3(void);
+void srt_menu_4(void);
+void srt_menu_5(void);
+void srt_menu_6(void);
+void srt_menu_7(void);
+void srt_menu_8_esc(void);
+
+int choice_scroll_sort(int choice, int diff);
+void choice_entre_sort(int choice);
+
+int* selection_sort_lowToup(int *arr, int n);
+int *bubble_sort_lowToup(int *arr, int n);
+double* selection_sort_lowToup_modData(double *arr, int n);
+int* insertion_sort_lowToup_modData(int *arr, int n);
+void insertion_sort_lowToup_modData_sname(int n);
+int partition(int *arr, int left, int right);
+void quick_sort(int *arr, int left, int right);
+int *shell_sort(int *arr, int n);
+int* count_sort(int *arr, int n);
+
+FILE* matrix_choice_file(void);
+int** create_matrix(int col, int size);
+void print_matrix(int **matrix, int col, int size, char* str);
+int** sort_matrix_1(int** matrix, int col, int size);
+void matrix_sort_1(void);
+
+void matrix_sort_2(void);
+void choose_option_matrix_2(int** matrix, int col, int size);
+void sort_matrix_2_main(int** matrix, int col, int size);
+void sort_matrix_2_side(int** matrix, int col, int size);
+int **sort_main_upTolow(int** matrix, int col, int size);
+int **sort_side_upTolow(int** matrix, int col, int size);
+
+struct MyStudents
+{
+	int group;
+	char s_name[30];
+	char f_name[30];
+	char t_name[30];
+	int date;
+	int* marks;
+	int count_marks;
+} *data;
+int count_of_fields;
+int id_for_std;
+
+void take_data_sort_from_file(void);
+void take_data_to_fild_mystudent_from_file(int id, char *str);
+void write_data_to_file(void);
+
+void sort_data_1(void);
+
+void data_sort_1(void);
+void data_sort_2(void);
+
+void count_sort_menu(void);
+void quick_sort_menu(void);
+void shell_sort_menu(void);
 
 
 
