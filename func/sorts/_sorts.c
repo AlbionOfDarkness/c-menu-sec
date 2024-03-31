@@ -187,6 +187,7 @@ int partition(int *arr, int left, int right)
 //	printf("\npivot[%d]", pivot);
   	int i = left - 1;
 
+
   	for (int j = left; j < right; j++) 
 	  {
 	    if (arr[j] <= pivot)
@@ -199,6 +200,61 @@ int partition(int *arr, int left, int right)
 
   return i + 1;
 }
+
+//int partition(int *arr, int left, int right)
+//{
+////	int pivot = find_mediana(arr, right - left);
+//	
+//	int pivot = arr[right];
+////	printf("\n\tPivot %d", pivot);
+//	
+//	int left_side = left;
+//	int right_side = right;
+//	
+//	while(left < right)
+//	{
+//		while(arr[left] >= pivot && left < right_side - 1) left++;
+//		while(arr[right] < pivot && right > left_side + 1) right--;
+//		if(left < right)
+//		{
+//			swap(&arr[left], &arr[right]);
+//			left++;
+//			right--;
+//		}
+//	}
+//	
+////	printf("\n[%d][%d] in r and l", left, right);
+//	return left;
+//}
+
+//int partition(int arr[], int low, int high) 
+//{ 
+//  
+//    // initialize pivot to be the first element 
+//    int pivot = arr[low]; 
+//    int i = low; 
+//    int j = high; 
+//  
+//    while (i < j) { 
+//  
+//        // condition 1: find the first element greater than 
+//        // the pivot (from starting) 
+//        while (arr[i] <= pivot && i <= high - 1) { 
+//            i++; 
+//        } 
+//  
+//        // condition 2: find the first element smaller than 
+//        // the pivot (from last) 
+//        while (arr[j] > pivot && j >= low + 1) { 
+//            j--; 
+//        } 
+//        if (i < j) { 
+//            swap(&arr[i], &arr[j]); 
+//        } 
+//    } 
+//    swap(&arr[low], &arr[j]); 
+//    return j; 
+//} 
 
 void quick_sort(int *arr, int left, int right) 
 {

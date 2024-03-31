@@ -73,7 +73,7 @@ void quick_sort_menu(void)
 	printf("\nQuick sort:\n");
 	int *arr = take_array_from_file();
 	print_array(arr, global_n, "Tkn arr:");
-	quick_sort(arr, 0, global_n);
+	quick_sort(arr, 0, global_n - 1);
 	print_array(arr, global_n, "Srt arr:");
 	free(arr);
 	printf("\n");
