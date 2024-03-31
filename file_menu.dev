@@ -28,7 +28,7 @@ Folders=files,func,func/files,func/menu,func/sorts,func/structs
 IncludeVersionInfo=0
 SupportXPThemes=0
 CompilerSet=0
-CompilerSettings=0;0;0;0;0;0;0;0;2;0;0;0;0;0;0;0;0;0;0;0;0;0;4;0;0;0
+CompilerSettings=0;0;0;0;0;0;0;0;2;0;0;0;0;0;0;0;0;0;1;0;0;0;4;0;0;0
 UnitCount=19
 
 [VersionInfo]
