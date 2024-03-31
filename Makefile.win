@@ -1,17 +1,17 @@
 # Project: file_menu
 # Makefile created by Embarcadero Dev-C++ 6.3
 
-CPP      = g++.exe -D__DEBUG__
-CC       = gcc.exe -D__DEBUG__
+CPP      = g++.exe
+CC       = gcc.exe
 WINDRES  = windres.exe
-OBJ      = main.o func/func_gen.o ../../C/_struct_menu/func/files/func_prog1.o ../../C/_struct_menu/func/files/func_prog2.o ../../C/_struct_menu/func/files/func_prog3.o ../../C/_struct_menu/func/files/func_prog4.o ../../C/_struct_menu/func/menu/func_menu_file.o ../../C/_struct_menu/func/menu/func_menu_main.o ../../C/_struct_menu/func/menu/menu_1db.o ../../C/_struct_menu/func/menu/menu_2db.o ../../C/_struct_menu/func/menu/menu_structs_main.o func/sorts/_sorts.o ../../C/_struct_menu/func/structs/func_to_work_with_1db.o ../../C/_struct_menu/func/structs/func_to_work_with_2db.o func/menu/menu_sorts.o func/sorts/matrix.o func/sorts/other.o func/sorts/data.o
-LINKOBJ  = main.o func/func_gen.o ../../C/_struct_menu/func/files/func_prog1.o ../../C/_struct_menu/func/files/func_prog2.o ../../C/_struct_menu/func/files/func_prog3.o ../../C/_struct_menu/func/files/func_prog4.o ../../C/_struct_menu/func/menu/func_menu_file.o ../../C/_struct_menu/func/menu/func_menu_main.o ../../C/_struct_menu/func/menu/menu_1db.o ../../C/_struct_menu/func/menu/menu_2db.o ../../C/_struct_menu/func/menu/menu_structs_main.o func/sorts/_sorts.o ../../C/_struct_menu/func/structs/func_to_work_with_1db.o ../../C/_struct_menu/func/structs/func_to_work_with_2db.o func/menu/menu_sorts.o func/sorts/matrix.o func/sorts/other.o func/sorts/data.o
-LIBS     = -L"D:/Programer/C/DEV-C++/TDM-GCC-64/lib" -L"D:/Programer/C/DEV-C++/TDM-GCC-64/x86_64-w64-mingw32/lib" -g3
+OBJ      = main.o func/func_gen.o ../../C/_struct_menu/func/files/func_prog1.o ../../C/_struct_menu/func/files/func_prog2.o ../../C/_struct_menu/func/files/func_prog3.o ../../C/_struct_menu/func/files/func_prog4.o ../../C/_struct_menu/func/menu/func_menu_file.o ../../C/_struct_menu/func/menu/func_menu_main.o ../../C/_struct_menu/func/menu/menu_1db.o ../../C/_struct_menu/func/menu/menu_2db.o ../../C/_struct_menu/func/menu/menu_structs_main.o
+LINKOBJ  = main.o func/func_gen.o ../../C/_struct_menu/func/files/func_prog1.o ../../C/_struct_menu/func/files/func_prog2.o ../../C/_struct_menu/func/files/func_prog3.o ../../C/_struct_menu/func/files/func_prog4.o ../../C/_struct_menu/func/menu/func_menu_file.o ../../C/_struct_menu/func/menu/func_menu_main.o ../../C/_struct_menu/func/menu/menu_1db.o ../../C/_struct_menu/func/menu/menu_2db.o ../../C/_struct_menu/func/menu/menu_structs_main.o
+LIBS     = -L"D:/Programer/C/DEV-C++/TDM-GCC-64/lib" -L"D:/Programer/C/DEV-C++/TDM-GCC-64/x86_64-w64-mingw32/lib"
 INCS     = -I"D:/Programer/C/DEV-C++/TDM-GCC-64/include" -I"D:/Programer/C/DEV-C++/TDM-GCC-64/x86_64-w64-mingw32/include" -I"D:/Programer/C/DEV-C++/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include"
 CXXINCS  = -I"D:/Programer/C/DEV-C++/TDM-GCC-64/include" -I"D:/Programer/C/DEV-C++/TDM-GCC-64/x86_64-w64-mingw32/include" -I"D:/Programer/C/DEV-C++/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include" -I"D:/Programer/C/DEV-C++/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include/c++"
 BIN      = file_menu.exe
-CXXFLAGS = $(CXXINCS) -std=c99 -g3
-CFLAGS   = $(INCS) -std=c99 -g3
+CXXFLAGS = $(CXXINCS) -std=c99
+CFLAGS   = $(INCS) -std=c99
 DEL      = D:\Programer\C\DEV-C++\devcpp.exe INTERNAL_DEL
 
 .PHONY: all all-before all-after clean clean-custom
@@ -56,24 +56,3 @@ func/func_gen.o: func/func_gen.c
 
 ../../C/_struct_menu/func/menu/menu_structs_main.o: ../../C/_struct_menu/func/menu/menu_structs_main.c
 	$(CC) -c ../../C/_struct_menu/func/menu/menu_structs_main.c -o ../../C/_struct_menu/func/menu/menu_structs_main.o $(CFLAGS)
-
-func/sorts/_sorts.o: func/sorts/_sorts.c
-	$(CC) -c func/sorts/_sorts.c -o func/sorts/_sorts.o $(CFLAGS)
-
-../../C/_struct_menu/func/structs/func_to_work_with_1db.o: ../../C/_struct_menu/func/structs/func_to_work_with_1db.c
-	$(CC) -c ../../C/_struct_menu/func/structs/func_to_work_with_1db.c -o ../../C/_struct_menu/func/structs/func_to_work_with_1db.o $(CFLAGS)
-
-../../C/_struct_menu/func/structs/func_to_work_with_2db.o: ../../C/_struct_menu/func/structs/func_to_work_with_2db.c
-	$(CC) -c ../../C/_struct_menu/func/structs/func_to_work_with_2db.c -o ../../C/_struct_menu/func/structs/func_to_work_with_2db.o $(CFLAGS)
-
-func/menu/menu_sorts.o: func/menu/menu_sorts.c
-	$(CC) -c func/menu/menu_sorts.c -o func/menu/menu_sorts.o $(CFLAGS)
-
-func/sorts/matrix.o: func/sorts/matrix.c
-	$(CC) -c func/sorts/matrix.c -o func/sorts/matrix.o $(CFLAGS)
-
-func/sorts/other.o: func/sorts/other.c
-	$(CC) -c func/sorts/other.c -o func/sorts/other.o $(CFLAGS)
-
-func/sorts/data.o: func/sorts/data.c
-	$(CC) -c func/sorts/data.c -o func/sorts/data.o $(CFLAGS)
